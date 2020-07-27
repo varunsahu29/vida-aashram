@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 27px;
+            padding: 12px;
+        }
+        .form{
+            padding: 7px;
+            margin: 4px;
+        }
+        .form input{
+            text-align: center;
+             width: 13rem;
+             height: 1.3rem;
+             border-radius: 8px;
+        }
+        .form input:hover{
+            background-color: brown;
+            color: cornsilk;
+        }
+        #sub input{
+            width: 20rem;
+             height: 2.5rem;
+        }
+        #sub input:hover{
+          background-color: brown;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>INQUIRY FORM</h2>
+        <br>
+        <form action="backend.php">
+          <div class="form">
+            NAME: <input type="text" name="my name" placeholder="Enter your name">
+          </div>
+          <div class="form">
+            FATHER'S NAME: <input type="text" name="my name" placeholder="Enter your Father name">
+        </div>
+        <div class="form">
+            MOBILE NO.: <input type="text" name="my name" placeholder="Enter your mobile no.">
+        </div>
+        <div class="form">
+            EMAIL ID: <input type="email" name="my email" placeholder="Enter your Email">
+        </div>
+        <div class="form">
+            CLASS: <input type="text" name="My class" placeholder="Enter your class">
+        </div>
+        <div class="form">
+            GENDER: <br> MALE<input type="radio"> FEMALE<input type="radio"> OTHER<input type="radio">
+        </div>
+        <div class="form" id="sub">
+            <input type="submit" value="SUBMIT NOW">
+        </div>
+
+
+          
+        </form>
+    </div>
+</body>
+</html>
